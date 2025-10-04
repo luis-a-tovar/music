@@ -152,7 +152,19 @@
                 </div>
             </div>
         </section>
+        <!-- Extracurricular placeholder kept to avoid JS errors (hidden) -->
+        <section id="extracurricular" class="extracurricular__section" style="display:none;" aria-hidden="true">
+          <!-- Placeholder wrapper so scripts that query #left, #right, .carousel won't fail -->
+          <div class="wrapper" id="extracurricular-wrapper">
+            <i id="left" class="fa-solid fa-angle-left" aria-hidden="true"></i>
+            <ul class="carousel" aria-hidden="true">
+              <!-- intentionally left empty -->
+            </ul>
+            <i id="right" class="fa-solid fa-angle-right" aria-hidden="true"></i>
+          </div>
+        </section>
 
+        
         <script src="app.js"></script>
 
     </body>
