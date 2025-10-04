@@ -1,155 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Luis Tovar</title>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        <!-- Fontawesome Link for Icons -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-        <link rel="icon" href="images/LTLogo.jpg">
-    </head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luis Tovar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="icon" href="images/LTLogo.jpg">
+  </head>
 
-    <body>
-        
-        <!-- navbar class -->
-        <nav class="navbar">
-            <div class="navbar__container">
-                <div class="navbar__toggle" id="mobile-menu">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-                <!-- nav bar buttons-->
-                <ul class="navbar__menu">
-                    <li class="navbar__item">
-                        <a href="https://luis-a-tovar.github.io" class="navbar__links button">About Me</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="https://luis-a-tovar.github.io/stem/" class="navbar__links button">STEM</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="https://luis-a-tovar.github.io/music" class="navbar__links button">Music</a>
-                    </li>
-                </ul>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="https://luis-a-tovar.github.io" class="navbar__links button">About Me</a>
+          </li>
+          <li class="navbar__item">
+            <a href="https://luis-a-tovar.github.io/stem/" class="navbar__links button">STEM</a>
+          </li>
+          <li class="navbar__item">
+            <a href="https://luis-a-tovar.github.io/music" class="navbar__links button">Music</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+      <div class="main">
+        <div class="main__container">
+          <div class="main__img--container fade delay-0">
+            <img src="images/Luis Tovar (Gray BGD).jpg" alt="Luis" id="main__img">
+          </div>
+
+          <div class="main__content fade delay-2">
+            <h1>> Hi, I'm Luis</h1>
+            <h2><span class="auto-type"></span></h2>
+
+            <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+            <script>
+              var typed = new Typed(".auto-type", {
+                strings: [
+                  "Mechanical Engineering at Virginia Tech^500",
+                  "I am First Generation.",
+                  "I am a Leader.",
+                  "I am a Musician.",
+                  "I am an Engineer.^1000"
+                ],
+                typeSpeed: 100,
+                backSpeed: 100,
+                loop: true
+              });
+            </script>
+
+            <div class="main__btn">
+              <a href="Resume/Luis_Tovar_Resume_Application.pdf" download="Luis_Tovar_Resume">Download Resume</a>
             </div>
-        </nav>
+          </div>
 
-        <!-- Home Section -->
-        <section id="home">
-            <div class="main">
-                <div class="main__container">
-                    <div class="main__img--container fade delay-0">
-                        <img src="images/Luis Tovar (Gray BGD).jpg" alt="Luis" id="main__img">
-                    </div>
+          <div class="main__icon--container fade delay-0">
+            <ul>
+              <li class="main__icon">
+                <a href="https://www.linkedin.com/in/luistovar03/">
+                  <img src="images/linkedin-app-white-icon.webp" alt="LinkedIn">
+                </a>
+              </li>
+              <li class="main__icon">
+                <a href="mailto:latovar03@vt.edu">
+                  <img src="images/360_F_512301276_qSZQslgWvKXE0boacEq10ClDTPihAWDj.jpg" alt="Email">
+                </a>
+              </li>
+              <li class="main__icon">
+                <a href="https://www.instagram.com/latovar03/">
+                  <img src="images/insta_logo.jpg" alt="Instagram">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
-                    <div class="main__content fade delay-2">
-                        <h1>> Hi, I'm Luis</h1>
-                        <h2>
-                            <span class="auto-type"></span>
-                            <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-                        </h2>
+    <!-- About Me Section -->
+    <section id="about" class="about-me fade delay-1">
+      <header class="about-me__header">
+        <h2>About Me</h2>
+      </header>
 
-                        <script>
-                            var typed = new Typed(".auto-type",{
-                                strings : ["Mechanical Engineering at Virginia Tech^500","I am First Generation.", "I am a Leader.","I am a Musician.", "I am an Engineer.^1000"],
-                                typeSpeed : 100,
-                                backSpeed : 100,
-                                smartBackspace : true,
-                                loop : true
-                            }) 
-                        </script>
+      <div class="about-me__container">
+        <div class="about-me__content">
+          <div class="about-me__description">
+            <p>
+              As a Mechanical Engineering student at Virginia Tech, I’m passionate about developing innovative solutions that merge design, analysis, and creativity. My interests span product design, acoustics, and emerging technologies that enhance mechanical performance and efficiency.
+            </p>
+            <p>
+              Outside of academics, I’m heavily involved in music — from composing original pieces to arranging for ensembles — and enjoy lifting, exploring nature, and working on cars.
+            </p>
+            <p class="verse">--Romans 8:18--</p>
+          </div>
 
-                        <div class="main__btn">
-                            <a href="Resume/Luis_Tovar_Resume_Application.pdf" download="Luis_Tovar_Resume">Download Resume</a>
-                        </div>
-                    </div>
+          <div class="about-me__slider">
+            <img class="slide" src="images/promFlick.jpg" alt="Prom">
+            <img class="slide" src="images/topOfMontain.jpg" alt="Mountain">
+            <img class="slide" src="images/workingOnCars.jpg" alt="Cars">
+            <img class="slide" src="images/igFlick.jpg" alt="Portrait">
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+          </div>
+        </div>
+      </div>
+    </section>
 
-                    <div class="main__icon--container fade delay-0">
-                        <ul>
-                            <li class="main__icon">
-                                <a href="https://www.linkedin.com/in/luistovar03/">
-                                    <img src="images/linkedin-app-white-icon.webp" alt="LinkedIn">
-                                </a>
-                            </li>
-                            <li class="main__icon">
-                                <a href="mailto:latovar03@vt.edu">
-                                    <img src="images/360_F_512301276_qSZQslgWvKXE0boacEq10ClDTPihAWDj.jpg" alt="Email">
-                                </a>
-                            </li>
-                            <li class="main__icon">
-                                <a href="https://www.instagram.com/latovar03/">
-                                    <img src="images/insta_logo.jpg" alt="Instagram">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <script src="app.js"></script>
 
-        <!-- About Me Section -->
-        <section id="about" class="about-me">
-            <header class="about-me__header fade delay-1">
-                <h2>About Me</h2>
-            </header>
+    <script>
+      // Simple JS to ensure fade animations actually show
+      document.addEventListener("DOMContentLoaded", function() {
+        const fades = document.querySelectorAll('.fade');
+        fades.forEach(el => {
+          setTimeout(() => {
+            el.classList.add('show');
+          }, 500);
+        });
+      });
 
-            <div class="about-me__container fade delay-1">
-                <div class="about-me__content">
-                    <div class="about-me__description">
-                        <p>As a Mechanical Engineering student at Virginia Tech, I'm passionate about dynamic systems, controls, and acoustics — fields where creativity meets technical precision. Outside of engineering, I’m deeply involved in music composition, arrangement, and performance. I also love cars, sports, and pushing myself physically and mentally in everything I do.</p>
-                        <p class="verse">--Romans 8:18--</p>
-                    </div>
-
-                    <div class="about-me__slider">
-                        <img class="slide" src="images/promFlick.jpg" alt="img not showing">
-                        <img class="slide" src="images/topOfMontain.jpg" alt="img not showing">
-                        <img class="slide" src="images/workingOnCars.jpg" alt="img not showing">
-                        <img class="slide" src="images/igFlick.jpg" alt="img not showing">
-                        <button class="prev" onclick="prevSlide()">&#10094</button>
-                        <button class="next" onclick="nextSlide()">&#10095</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Original Compositions Section -->
-        <section id="compositions" class="projects__section">
-            <h2>Original Compositions</h2>
-            <div class="projects__container fade delay-3">
-                <div class="projects__box">
-                    <img class="image1" src="images/Composition1.jpg" alt="Composition 1">
-                    <h3>“Resonance”</h3>
-                    <p>A symphonic piece exploring motion, rhythm, and emotion through evolving harmonic structures and brass-driven melodies.</p>
-                </div>
-                <div class="projects__box">
-                    <img class="image1" src="images/Composition2.jpg" alt="Composition 2">
-                    <h3>“Echoes of the Valley”</h3>
-                    <p>An atmospheric orchestral composition inspired by nature, ambient sound, and the interplay between stillness and energy.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Arrangements Section -->
-        <section id="arrangements" class="projects__section">
-            <h2>Arrangements</h2>
-            <div class="projects__container fade delay-3">
-                <div class="projects__box">
-                    <img class="image1" src="images/Arrangement1.jpg" alt="Arrangement 1">
-                    <h3>“City of Stars” – Jazz Combo</h3>
-                    <p>An arrangement of the La La Land classic for jazz ensemble, featuring reharmonized chords and expanded solo sections.</p>
-                </div>
-                <div class="projects__box">
-                    <img class="image1" src="images/Arrangement2.jpg" alt="Arrangement 2">
-                    <h3>“Fly Me to the Moon” – Vocal Quartet</h3>
-                    <p>A barbershop-style vocal arrangement emphasizing close harmonies, phrasing, and a rich harmonic texture.</p>
-                </div>
-            </div>
-        </section>
-
-        <script src="app.js"></script>
-    </body>
+      // Optional: Debug your image slider
+      let currentSlide = 0;
+      const slides = document.querySelectorAll(".slide");
+      function showSlide(index) {
+        slides.forEach(slide => slide.style.display = "none");
+        slides[index].style.display = "block";
+      }
+      function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+      }
+      function prevSlide() {
+        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+        showSlide(currentSlide);
+      }
+      showSlide(currentSlide);
+    </script>
+  </body>
 </html>
