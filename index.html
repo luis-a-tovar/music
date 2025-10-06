@@ -16,6 +16,36 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     />
     <link rel="icon" href="images/LTlogo.jpg" />
+
+    <style>
+      /* === Match button palette to resume download button === */
+
+      .button-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      .button-group .button {
+        display: inline-block;
+        background-color: #444; /* dark gray from resume button */
+        color: white; /* white text */
+        text-decoration: none;
+        padding: 10px 22px;
+        border-radius: 8px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        width: 200px;
+        text-align: center;
+      }
+
+      .button-group .button:hover {
+        background-color: #666; /* lighter gray hover tone */
+        transform: translateY(-2px);
+      }
+    </style>
   </head>
 
   <body>
@@ -110,7 +140,10 @@
           <h3>Bring Me to Life - Percussion Arrangement</h3>
           <p>placeholder</p>
           <div class="button-group">
-            <a href="music/arrangements/Bring me to life.mp3" target="_blank" class="button"
+            <a
+              href="music/arrangements/Bring me to life.mp3"
+              target="_blank"
+              class="button"
               >MP3</a
             >
             <a
@@ -151,67 +184,4 @@
               class="button"
               >Individual Parts</a
             >
-          </div>
-        </div>
-
-        <div class="projects__box">
-          <img class="image1" src="images/Clair de Lune.jpg" alt="Arrangement cover" />
-          <h3>Claire de Lune Small Ensemble Arrangement</h3>
-          <p>placeholder</p>
-          <div class="button-group">
-            <a href="music/arrangements/Claire de Lune.mp3" target="_blank" class="button"
-              >MP3</a
-            >
-            <a
-              href="music/arrangements/Claire de Lune Score.pdf"
-              target="_blank"
-              class="button"
-              >Full Score</a
-            >
-            <a
-              href="music/arrangements/Claire de Lune Parts.pdf"
-              target="_blank"
-              class="button"
-              >Individual Parts</a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Ensembles and Awards -->
-    <section id="extracurricular" class="extracurricular__section">
-      <h2>Ensembles and Awards</h2>
-      <div class="wrapper fade delay-4">
-        <i id="left" class="fa-solid fa-angle-left"></i>
-        <ul class="carousel">
-          <li class="card">
-            <div class="img">
-              <img src="images/placeholder" alt="img" draggable="false" />
-            </div>
-            <h2>placeholder</h2>
-            <h3>placeholder</h3>
-            <p>placeholder</p>
-          </li>
-          <li class="card">
-            <div class="img">
-              <img src="images/placeholder" alt="img" draggable="false" />
-            </div>
-            <h2>placeholder</h2>
-            <p>placeholder</p>
-          </li>
-          <li class="card">
-            <div class="img">
-              <img src="images/placeholder" alt="img" draggable="false" />
-            </div>
-            <h2>placeholder</h2>
-            <p>placeholder</p>
-          </li>
-        </ul>
-        <i id="right" class="fa-solid fa-angle-right"></i>
-      </div>
-    </section>
-
-    <script src="app.js"></script>
-  </body>
-</html>
+          </
