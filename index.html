@@ -1,164 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Luis Tovar</title>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-        <link rel="icon" href="images/LTlogo.jpg">
-    </head>
-    <body>
-        
-        <!-- navbar -->
-        <nav class="navbar">
-            <div class="navbar__container">
-                <div class="navbar__toggle" id="mobile-menu">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-                <ul class="navbar__menu">
-                    <li class="navbar__item">
-                        <a href="https://luis-a-tovar.github.io" class="navbar__links button">About Me</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="https://luis-a-tovar.github.io/stem/" class="navbar__links button">STEM</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="https://luis-a-tovar.github.io/music" class="navbar__links button">Music</a>
-                    </li>
-                </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luis Tovar</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link rel="icon" href="images/LTlogo.jpg" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="https://luis-a-tovar.github.io" class="navbar__links button"
+              >About Me</a
+            >
+          </li>
+          <li class="navbar__item">
+            <a
+              href="https://luis-a-tovar.github.io/stem/"
+              class="navbar__links button"
+              >STEM</a
+            >
+          </li>
+          <li class="navbar__item">
+            <a
+              href="https://luis-a-tovar.github.io/music"
+              class="navbar__links button"
+              >Music</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-me">
+      <header class="about-me__header fade delay-1">
+        <h2>Music Background</h2>
+      </header>
+      <div class="about-me__container fade delay-1">
+        <div class="about-me__content">
+          <div class="about-me__description">
+            <p>placeholder</p>
+          </div>
+
+          <div class="about-me__slider">
+            <img class="slide" src="images/promFlick.jpg" alt="img not showing" />
+            <img class="slide" src="images/topOfMontain.jpg" alt="img not showing" />
+            <img class="slide" src="images/workingOnCars.jpg" alt="img not showing" />
+            <img class="slide" src="images/igFlick.jpg" alt="img not showing" />
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Original Compositions Section -->
+    <section id="original-compositions" class="projects__section">
+      <h2>Original Compositions</h2>
+
+      <div class="projects__container fade delay-3">
+        <div class="projects__box">
+          <img class="image1" src="images/songbird.jpg" alt="Original composition cover" />
+          <h3>Songbird</h3>
+          <p>
+            A deeply personal piece reflecting the journey from confinement to liberation.
+            “Songbird” begins in somber, restrained textures, gradually unfolding into
+            soaring melodies that symbolize breaking free and embracing newfound freedom.
+          </p>
+
+          <div class="button-group">
+            <a href="music/originals/Songbird.mp3" target="_blank" class="button"
+              >MP3</a
+            >
+            <a href="music/originals/Songbird.pdf" target="_blank" class="button"
+              >Full Score</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Arrangements Section -->
+    <section id="arrangements" class="projects__section">
+      <h2>Arrangements</h2>
+
+      <div class="projects__container fade delay-3">
+        <div class="projects__box">
+          <img class="image1" src="images/Bringmeto.png" alt="Arrangement cover" />
+          <h3>Bring Me to Life - Percussion Arrangement</h3>
+          <p>placeholder</p>
+          <div class="button-group">
+            <a href="music/arrangements/Bring me to life.mp3" target="_blank" class="button"
+              >MP3</a
+            >
+            <a
+              href="music/arrangements/Bring me to life Score.pdf"
+              target="_blank"
+              class="button"
+              >Full Score</a
+            >
+            <a
+              href="music/arrangements/Bring me to life Parts.pdf"
+              target="_blank"
+              class="button"
+              >Individual Parts</a
+            >
+          </div>
+        </div>
+
+        <div class="projects__box">
+          <img class="image1" src="images/merrygo.jpg" alt="Arrangement cover" />
+          <h3>Merry Go Round of Life Percussion Arrangement</h3>
+          <p>placeholder</p>
+          <div class="button-group">
+            <a
+              href="music/arrangements/Merry Go Round of Life Perc.mp3"
+              target="_blank"
+              class="button"
+              >MP3</a
+            >
+            <a
+              href="music/arrangements/Merry Go Round of Life Perc Score.pdf"
+              target="_blank"
+              class="button"
+              >Full Score</a
+            >
+            <a
+              href="music/arrangements/Merry Go Round of Life Perc Parts.pdf"
+              target="_blank"
+              class="button"
+              >Individual Parts</a
+            >
+          </div>
+        </div>
+
+        <div class="projects__box">
+          <img class="image1" src="images/Clair de Lune.jpg" alt="Arrangement cover" />
+          <h3>Claire de Lune Small Ensemble Arrangement</h3>
+          <p>placeholder</p>
+          <div class="button-group">
+            <a href="music/arrangements/Claire de Lune.mp3" target="_blank" class="button"
+              >MP3</a
+            >
+            <a
+              href="music/arrangements/Claire de Lune Score.pdf"
+              target="_blank"
+              class="button"
+              >Full Score</a
+            >
+            <a
+              href="music/arrangements/Claire de Lune Parts.pdf"
+              target="_blank"
+              class="button"
+              >Individual Parts</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ensembles and Awards -->
+    <section id="extracurricular" class="extracurricular__section">
+      <h2>Ensembles and Awards</h2>
+      <div class="wrapper fade delay-4">
+        <i id="left" class="fa-solid fa-angle-left"></i>
+        <ul class="carousel">
+          <li class="card">
+            <div class="img">
+              <img src="images/placeholder" alt="img" draggable="false" />
             </div>
-        </nav>
-      
-        <!-- About Me Section -->
-        <section id="about" class="about-me">
-            <header class="about-me__header fade delay-1">
-                <h2>Music Background</h2>
-            </header>
-            <div class="about-me__container fade delay-1">
-                <div class="about-me__content">
-                    <div class="about-me__description">
-                        <p>placeholder</p>
-                    </div>
-                    
-                    <div class="about-me__slider">
-                        <img class="slide" src="images/promFlick.jpg" alt="img not showing">
-                        <img class="slide" src="images/topOfMontain.jpg" alt="img not showing">
-                        <img class="slide" src="images/workingOnCars.jpg" alt="img not showing">
-                        <img class="slide" src="images/igFlick.jpg" alt="img not showing">
-                        <button class="prev" onclick="prevSlide()">&#10094;</button>
-                        <button class="next" onclick="nextSlide()">&#10095;</button>
-                    </div>
-                </div>
+            <h2>placeholder</h2>
+            <h3>placeholder</h3>
+            <p>placeholder</p>
+          </li>
+          <li class="card">
+            <div class="img">
+              <img src="images/placeholder" alt="img" draggable="false" />
             </div>
-        </section>
-
-        <!-- Original Compositions Section -->
-        <section id="original-compositions" class="projects__section">
-            <h2>Original Compositions</h2>
-
-            <div class="projects__container fade delay-3">
-                <div class="projects__box">
-                    <img class="image1" src="images/songbird.jpg" alt="Original composition cover">
-                    <h3>Songbird</h3>
-                    <p>A deeply personal piece reflecting the journey from confinement to liberation. “Songbird” begins in somber, restrained textures, gradually unfolding into soaring melodies that symbolize breaking free and embracing newfound freedom.</p>
-
-                    <div class="main__btn" style="text-align:center;">
-                        <a href="music/originals/Songbird.mp3" target="_blank" class="button">MP3</a>
-                    </div>
-                    <div class="main__btn" style="text-align:center;">
-                        <a href="music/originals/Songbird.pdf" target="_blank" class="button">Full Score</a>
-                    </div>
-                </div>
+            <h2>placeholder</h2>
+            <p>placeholder</p>
+          </li>
+          <li class="card">
+            <div class="img">
+              <img src="images/placeholder" alt="img" draggable="false" />
             </div>
-        </section>
+            <h2>placeholder</h2>
+            <p>placeholder</p>
+          </li>
+        </ul>
+        <i id="right" class="fa-solid fa-angle-right"></i>
+      </div>
+    </section>
 
-        <!-- Arrangements Section -->
-        <section id="arrangements" class="projects__section">
-            <h2>Arrangements</h2>
-
-            <div class="projects__container fade delay-3">
-
-                <div class="projects__box">
-                    <img class="image1" src="images/Bringmeto.png" alt="Arrangement cover">
-                    <h3>Bring Me to Life - Percussion Arrangement</h3>
-                    <p>placeholder</p>
-                    <div class="main__btn" style="text-align:center;">
-                        <a href="music/arrangements/Bring me to life.mp3" target="_blank" class="button">MP3</a>
-                    </div>
-                    <div class="main__btn" style="text-align:center;">
-                        <a href="music/arrangements/Bring me to life Score.pdf" target="_blank" class="button">Full Score</a>
-                    </div>
-                    <div class="main__btn" style="text-align:center;">
-                        <a href="music/arrangements/Bring me to life Parts.pdf" target="_blank" class="button">Individual Parts</a>
-                    </div>
-                </div>
-
-                <div class="projects__box">
-                    <img class="image1" src="images/merrygo.jpg" alt="Arrangement cover">
-                    <h3>Merry Go Round of Life Percussion Arrangement</h3>
-                    <p>placeholder</p>
-                    <div class="main__btn" style="text-align:center;">
-                        <a href="music/arrangements/Merry Go Round of Life Perc.mp3" target="_blank" class="button">MP3</a>
-                    </div>
-                    <div class="main__btn" style="text-align:center;">
-                        <a href="music/arrangements/Merry Go Round of Life Perc Score.pdf" target="_blank" class="button">Full Score</a>
-                    </div>
-                    <div class="main__btn" style="text-align:center;">
-                        <a href="music/arrangements/Merry Go Round of Life Perc Parts.pdf" target="_blank" class="button">Individual Parts</a>
-                    </div>
-                </div>
-
-                <div class="projects__box">
-                    <img class="image1" src="images/Clair de Lune.jpg" alt="Arrangement cover">
-                    <h3>Claire de Lune Small Ensemble Arrangement</h3>
-                    <p>placeholder</p>
-                    <div class="main__btn" style="text-align:center;">
-                        <a href="music/arrangements/Claire de Lune.mp3" target="_blank" class="button">MP3</a>
-                    </div>
-                    <div class="main__btn" style="text-align:center;">
-                        <a href="music/arrangements/Claire de Lune Score.pdf" target="_blank" class="button">Full Score</a>
-                    </div>
-                    <div class="main__btn" style="text-align:center;">
-                        <a href="music/arrangements/Claire de Lune Parts.pdf" target="_blank" class="button">Individual Parts</a>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- Ensembles and Awards -->
-        <section id="extracurricular" class="extracurricular__section">
-            <h2>Ensembles and Awards</h2>
-            <div class="wrapper fade delay-4">
-                <i id="left" class="fa-solid fa-angle-left"></i>
-                <ul class="carousel">
-                    <li class="card">
-                        <div class="img"><img src="images/placeholder" alt="img" draggable="false"></div>
-                        <h2>placeholder</h2>
-                        <h3>placeholder</h3>
-                        <p>placeholder</p>
-                    </li>
-                    <li class="card">
-                        <div class="img"><img src="images/placeholder" alt="img" draggable="false"></div>
-                        <h2>placeholder</h2>
-                        <p>placeholder</p>
-                    </li>
-                    <li class="card">
-                        <div class="img"><img src="images/placeholder" alt="img" draggable="false"></div>
-                        <h2>placeholder</h2>
-                        <p>placeholder</p>
-                    </li>
-                </ul>
-                <i id="right" class="fa-solid fa-angle-right"></i>
-            </div>
-        </section>
-
-        <script src="app.js"></script>
-    </body>
+    <script src="app.js"></script>
+  </body>
 </html>
