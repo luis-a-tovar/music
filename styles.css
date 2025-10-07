@@ -63,7 +63,7 @@ html {
 }
 
 .button {
-  background-color: #242424;
+  background-color: #4a4a4a; /* Slightly lighter gray */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -75,7 +75,7 @@ html {
   outline: none;
   border-radius: 0.5rem;
   margin: 10px 20px;
-  color: #fff;
+  color: #fff; /* White text */
   transition: all 0.4s ease-in-out;
 }
 
